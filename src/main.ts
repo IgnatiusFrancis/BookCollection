@@ -1,6 +1,5 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import config from 'config';
 import { TransFormationInterceptor } from './response.interface';
 import { Logger, ValidationPipe } from '@nestjs/common';
 
@@ -20,8 +19,8 @@ async function bootstrap() {
 
   app.useGlobalInterceptors(new TransFormationInterceptor());
 
-  await app.listen(config.get('port'), () => {
-    return logger.log(`Server running on port ${config.get('port')}`);
+  await app.listen(process.env.port, () => {
+    return logger.log(`Server running on port ${process.env.port}`);
   });
 }
 bootstrap();

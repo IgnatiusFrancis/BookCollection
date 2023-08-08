@@ -1,15 +1,38 @@
-import { IsOptional, IsString, IsNotEmpty } from 'class-validator';
+import { Type } from 'class-transformer';
+import {
+  IsOptional,
+  IsString,
+  IsNotEmpty,
+  IsArray,
+  ValidateNested,
+  IsNumber,
+} from 'class-validator';
 
 export class CreateBookDto {
+  @IsNumber()
+  @IsNotEmpty()
   id: number;
-  title: String;
-  author: String;
+
+  @IsString()
+  @IsNotEmpty()
+  title: string;
+
+  @IsString()
+  @IsNotEmpty()
+  author: string;
 
   @IsOptional()
   @IsString()
   @IsNotEmpty()
-  description?: String;
+  description?: string;
+
+  @IsString()
+  @IsNotEmpty()
   price: number;
+
+  @IsArray()
+  @ValidateNested({ each: true })
+  @Type(() => Image)
   images: Image[];
 }
 

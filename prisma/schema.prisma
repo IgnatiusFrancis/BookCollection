@@ -12,7 +12,7 @@ datasource db {
 
 model Book {
   id          Int      @id @default(autoincrement())
-  title       String
+  title       String   @unique
   author      String
   description String?
   price       Float?
