@@ -11,14 +11,21 @@ datasource db {
 }
 
 model Book {
-  id              Int       @id @default(autoincrement())
-  title           String
-  author          String
-  publishedYear   Int
-  description     String?
-  coverImageUrl   String?
-  price           Float?
-  publicationDate DateTime?
-  created_at      DateTime  @default(now())
-  updated_at      DateTime  @updatedAt
+  id          Int      @id @default(autoincrement())
+  title       String
+  author      String
+  description String?
+  price       Float?
+  images      Image[]
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+}
+
+model Image {
+  id         Int      @id @default(autoincrement())
+  url        String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  book_id    Int
+  book       Book     @relation(fields: [book_id], references: [id])
 }
