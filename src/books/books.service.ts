@@ -54,20 +54,27 @@ export class BooksService {
   }
 
   async findAll() {
-    const books = await this.prismaService.book.findMany({
-      orderBy: {
-        id: 'asc', // Sort by id in ascending order
-      },
-    });
+    try {
+      const books = await this.prismaService.book.findMany({
+        orderBy: {
+          id: 'asc', // Sort by id in ascending order
+        },
+        include: {
+          images: true,
+        },
+      });
 
-    if (!books.length) {
-      throw new NotFoundException('No book found');
+      if (!books.length) {
+        throw new NotFoundException('No book found');
+      }
+
+      return {
+        result: books,
+        success: true,
+      };
+    } catch (error) {
+      throw error;
     }
-
-    return {
-      result: books,
-      success: true,
-    };
   }
 
   async findOne(id: number) {
