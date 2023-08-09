@@ -50,7 +50,7 @@ The API will be accessible at http://localhost:6000.
     URL: /books
     Method: POST
     Request Body:
-    Response: Detailed response information is available in the [View API Documentation](https://www.postman.com/ignatiusfrancis/workspace/book-collection-api/collection/19595090-1634b028-85e2-4b8f-aa51-f20538897a5c?action=share&creator=19595090)
+    Response: Detailed response information is available in the [GitHub Pages](https://pages.github.com/). [View API Documentation](https://www.postman.com/ignatiusfrancis/workspace/book-collection-api/collection/19595090-1634b028-85e2-4b8f-aa51-f20538897a5c?action=share&creator=19595090)
 
 
 Get All Books
