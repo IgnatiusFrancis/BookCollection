@@ -9,8 +9,6 @@ import {
 } from 'class-validator';
 
 export class CreateBookDto {
-  @IsNumber()
-  @IsNotEmpty()
   id: number;
 
   @IsString()
@@ -23,10 +21,9 @@ export class CreateBookDto {
 
   @IsOptional()
   @IsString()
-  @IsNotEmpty()
   description?: string;
 
-  @IsString()
+  @IsNumber()
   @IsNotEmpty()
   price: number;
 
