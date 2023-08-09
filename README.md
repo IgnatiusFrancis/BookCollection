@@ -31,49 +31,53 @@ Welcome to the Book CRUD Operations API documentation. This API allows you to ma
    #Install dependencies:
    npm install
    
-#Configuration
+# Configuration
 
 Create a .env file in the root directory and configure the following environment variables:
 DATABASE_URL=postgresql://username:password@localhost:5432/dbname
 
-#Usage
-#Starting the Server
+# Usage
+# Starting the Server
 To start the API server, run the following command:
 npm start or npm run start
 
 The API will be accessible at http://localhost:6000.
 
 
-#API Endpoints
-# Create a Book
+# api-endpoints
+ Create a Book
 
     URL: /books
     Method: POST
     Request Body:
-    Response: Detailed response information is available in the API documentation.
+    Response: Detailed response information is available in the [View API Documentation](https://www.postman.com/ignatiusfrancis/workspace/book-collection-api/collection/19595090-1634b028-85e2-4b8f-aa51-f20538897a5c?action=share&creator=19595090)
+.
 
-# Get All Books
+Get All Books
 
     URL: /books
     Method: GET
-    Response: Detailed response information is available in the API documentation.
+    Response: Detailed response information is available in the [View API Documentation](https://www.postman.com/ignatiusfrancis/workspace/book-collection-api/collection/19595090-1634b028-85e2-4b8f-aa51-f20538897a5c?action=share&creator=19595090).
 
-# Get a Book by ID
+ Get a Book by ID
 
     URL: /books/:id
     Method: GET
-    Response: Detailed response information is available in the API documentation.
+    Response: Detailed response information is available in the [View API Documentation](https://www.postman.com/ignatiusfrancis/workspace/book-collection-api/collection/19595090-1634b028-85e2-4b8f-aa51-f20538897a5c?action=share&creator=19595090)
+.
 
-# Update a Book
+ Update a Book
 
     URL: /books/:id
     Method: PUT
     Request Body: Similar to create endpoint
-    Response: Detailed response information is available in the API documentation.
+    Response: Detailed response information is available in the [View API Documentation](https://www.postman.com/ignatiusfrancis/workspace/book-collection-api/collection/19595090-1634b028-85e2-4b8f-aa51-f20538897a5c?action=share&creator=19595090)
+.
 
-# Delete a Book
+ Delete a Book
 
     URL: /books/:id
     Method: DELETE
-    Response: Detailed response information is available in the API documentation.
+    Response: Detailed response information is available in the [View API Documentation](https://www.postman.com/ignatiusfrancis/workspace/book-collection-api/collection/19595090-1634b028-85e2-4b8f-aa51-f20538897a5c?action=share&creator=19595090)
+.
 
