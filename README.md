@@ -7,6 +7,8 @@ Welcome to the Book CRUD Operations API documentation. This API allows you to ma
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Configuration](#configuration)
+  - [Manual Configuration of database](#manual)
+  - [Cloud deployment of database](#cloud)
 - [Usage](#usage)
   - [Starting the Server](#starting-the-server)
   - [API Endpoints](#api-endpoints)
@@ -20,7 +22,7 @@ Welcome to the Book CRUD Operations API documentation. This API allows you to ma
 - Nestjs 
 - PostgreSQL database
 
-#Installation
+# Installation
 
 1. Clone the repository:
    ```bash
@@ -33,8 +35,12 @@ Welcome to the Book CRUD Operations API documentation. This API allows you to ma
    
 # Configuration
 
+# manual
 Create a .env file in the root directory and configure the following environment variables:
 DATABASE_URL=postgresql://username:password@localhost:5432/dbname
+
+# cloud
+The database is deployed already to render, you dont need to install or download PostgreSQL
 
 # Usage
 # Starting the Server
@@ -84,4 +90,7 @@ Response: For more details, please refer to the API documentation at the followi
 
     Response: Detailed response information is available in the [View API Documentation](https://www.postman.com/ignatiusfrancis/workspace/book-collection-api/collection/19595090-1634b028-85e2-4b8f-aa51-f20538897a5c?action=share&creator=19595090)
 .
+
+# testing
+npm run test books.service.spec.ts
 
