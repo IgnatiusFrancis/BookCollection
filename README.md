@@ -15,12 +15,12 @@ Welcome to the Book CRUD Operations API documentation. This API allows you to ma
 - [License](#license)
 - [Contact](#contact)
 
-## Prerequisites
+#Prerequisites
 
 - Nestjs 
 - PostgreSQL database
 
-## Installation
+#Installation
 
 1. Clone the repository:
    ```bash
@@ -31,20 +31,20 @@ Welcome to the Book CRUD Operations API documentation. This API allows you to ma
    #Install dependencies:
    npm install
    
-## Configuration
+#Configuration
 
 Create a .env file in the root directory and configure the following environment variables:
 DATABASE_URL=postgresql://username:password@localhost:5432/dbname
 
-## Usage
-# Starting the Server
+#Usage
+#Starting the Server
 To start the API server, run the following command:
 npm start or npm run start
 
 The API will be accessible at http://localhost:6000.
 
 
-## API Endpoints
+#API Endpoints
 # Create a Book
 
     URL: /books
