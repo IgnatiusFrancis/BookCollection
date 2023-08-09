@@ -48,35 +48,40 @@ The API will be accessible at http://localhost:6000.
  Create a Book
 
     URL: /books
-    Method: POST
-    Request Body:
-    Response: Detailed response information is available in the  API Documentation https://www.postman.com/ignatiusfrancis/workspace/book-collection-api/collection/19595090-1634b028-85e2-4b8f-aa51-f20538897a5c?action=share&creator=19595090
+Method: Post
+Response: For more details, please refer to the API documentation at the following URL:
+[API Documentation](https://www.postman.com/ignatiusfrancis/workspace/book-collection-api/collection/19595090-1634b028-85e2-4b8f-aa51-f20538897a5c?action=share&creator=19595090)
 
 
 Get All Books
 
-    URL: /books
-    Method: GET
-    Response: Detailed response information is available in the [View API Documentation](https://www.postman.com/ignatiusfrancis/workspace/book-collection-api/collection/19595090-1634b028-85e2-4b8f-aa51-f20538897a5c?action=share&creator=19595090).
+   URL: /books
+Method: GET
+Response: For more details, please refer to the API documentation at the following URL:
+[API Documentation](https://www.postman.com/ignatiusfrancis/workspace/book-collection-api/collection/19595090-1634b028-85e2-4b8f-aa51-f20538897a5c?action=share&creator=19595090)
 
  Get a Book by ID
 
     URL: /books/:id
-    Method: GET
-    Response: Detailed response information is available in the [View API Documentation](https://www.postman.com/ignatiusfrancis/workspace/book-collection-api/collection/19595090-1634b028-85e2-4b8f-aa51-f20538897a5c?action=share&creator=19595090)
-.
+Method: GET
+Response: For more details, please refer to the API documentation at the following URL:
+[API Documentation](https://www.postman.com/ignatiusfrancis/workspace/book-collection-api/collection/19595090-1634b028-85e2-4b8f-aa51-f20538897a5c?action=share&creator=19595090)
+
 
  Update a Book
 
     URL: /books/:id
     Method: PUT
-    Request Body: Similar to create endpoint
-    Response: Detailed response information is available in the [View API Documentation](https://www.postman.com/ignatiusfrancis/workspace/book-collection-api/collection/19595090-1634b028-85e2-4b8f-aa51-f20538897a5c?action=share&creator=19595090).
+Response: For more details, please refer to the API documentation at the following URL:
+[API Documentation](https://www.postman.com/ignatiusfrancis/workspace/book-collection-api/collection/19595090-1634b028-85e2-4b8f-aa51-f20538897a5c?action=share&creator=19595090)
 
  Delete a Book
 
     URL: /books/:id
     Method: DELETE
+Response: For more details, please refer to the API documentation at the following URL:
+[API Documentation](https://www.postman.com/ignatiusfrancis/workspace/book-collection-api/collection/19595090-1634b028-85e2-4b8f-aa51-f20538897a5c?action=share&creator=19595090)
+
     Response: Detailed response information is available in the [View API Documentation](https://www.postman.com/ignatiusfrancis/workspace/book-collection-api/collection/19595090-1634b028-85e2-4b8f-aa51-f20538897a5c?action=share&creator=19595090)
 .
 
