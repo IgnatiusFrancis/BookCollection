@@ -144,33 +144,37 @@ export class BooksService {
       };
     } catch (error) {
       // Handle error appropriately
-      throw error(error);
+      throw error;
     }
   }
 
   async remove(id: number) {
-    // Check if the book with the given id exists
-    const existingBook = await this.prismaService.book.findUnique({
-      where: { id },
-    });
+    try {
+      // Check if the book with the given id exists
+      const existingBook = await this.prismaService.book.findUnique({
+        where: { id },
+      });
 
-    if (!existingBook) {
-      throw new NotFoundException('Book not found');
+      if (!existingBook) {
+        throw new NotFoundException('Book not found');
+      }
+
+      // Delete Images
+      await this.prismaService.image.deleteMany({
+        where: { book_id: id },
+      });
+
+      //Delete Book
+      await this.prismaService.book.delete({
+        where: { id },
+      });
+
+      return {
+        message: 'Book deleted successfully',
+        success: true,
+      };
+    } catch (error) {
+      throw error;
     }
-
-    // Delete Images
-    await this.prismaService.image.deleteMany({
-      where: { book_id: id },
-    });
-
-    //Delete Book
-    await this.prismaService.book.delete({
-      where: { id },
-    });
-
-    return {
-      message: 'Book deleted successfully',
-      success: true,
-    };
   }
 }
